@@ -1,0 +1,11 @@
+E:\progs\2016\апрокс\master\master\bin\Debug\master.exe
+E:\progs\2016\апрокс\master\master\bin\Debug\master.pdb
+E:\progs\2016\апрокс\master\master\obj\Debug\master.csprojResolveAssemblyReference.cache
+E:\progs\2016\апрокс\master\master\obj\Debug\master.MainForm.resources
+E:\progs\2016\апрокс\master\master\obj\Debug\master.Properties.Resources.resources
+E:\progs\2016\апрокс\master\master\obj\Debug\master.csproj.GenerateResource.Cache
+E:\progs\2016\апрокс\master\master\obj\Debug\master.exe
+E:\progs\2016\апрокс\master\master\obj\Debug\master.pdb
+E:\progs\2016\апрокс\master\master\obj\Debug\master.fLinterp.resources
+E:\progs\2016\апрокс\master\master\obj\Debug\master.HelpLinterp.resources
+E:\progs\2016\апрокс\master\master\obj\Debug\master.PtoCalc.resources

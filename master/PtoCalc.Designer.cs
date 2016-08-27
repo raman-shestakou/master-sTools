@@ -161,7 +161,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(473, 62);
             this.label1.TabIndex = 7;
-            this.label1.Text = "1 [кг] Пропан-бутан = 0,613 [кг] МАФ\r\n1 [м3] Ацетилен= 0,613 [кг] МАФ";
+            this.label1.Text = "1 [кг] Пропан-бутан = 0,613 [кг] МАФ\r\n1 [м3] Ацетилен= 1,06 [кг] МАФ";
             // 
             // label2
             // 

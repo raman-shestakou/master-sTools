@@ -34,6 +34,7 @@
             this.оАвтореToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAproks = new System.Windows.Forms.Button();
             this.btnMassCalc = new System.Windows.Forms.Button();
+            this.btnBetonCalc = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,6 +83,17 @@
             this.btnMassCalc.UseVisualStyleBackColor = true;
             this.btnMassCalc.Click += new System.EventHandler(this.btnMassCalc_Click);
             // 
+            // btnBetonCalc
+            // 
+            this.btnBetonCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnBetonCalc.Location = new System.Drawing.Point(257, 29);
+            this.btnBetonCalc.Name = "btnBetonCalc";
+            this.btnBetonCalc.Size = new System.Drawing.Size(176, 48);
+            this.btnBetonCalc.TabIndex = 4;
+            this.btnBetonCalc.Text = "Калькулятор бетона";
+            this.btnBetonCalc.UseVisualStyleBackColor = true;
+            this.btnBetonCalc.Click += new System.EventHandler(this.btnBetonCalc_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -89,6 +101,7 @@
             this.BackgroundImage = global::master.Properties.Resources.coolmass1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(445, 597);
+            this.Controls.Add(this.btnBetonCalc);
             this.Controls.Add(this.btnMassCalc);
             this.Controls.Add(this.btnAproks);
             this.Controls.Add(this.menuStrip1);
@@ -113,6 +126,7 @@
         private System.Windows.Forms.ToolStripMenuItem оАвтореToolStripMenuItem;
         private System.Windows.Forms.Button btnAproks;
         private System.Windows.Forms.Button btnMassCalc;
+        private System.Windows.Forms.Button btnBetonCalc;
     }
 }
 

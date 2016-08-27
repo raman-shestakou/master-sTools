@@ -20,3 +20,4 @@ E:\progs\2016\master-sTools\master\obj\Release\master.fLinterp.resources
 E:\progs\2016\master-sTools\master\obj\Release\master.Properties.Resources.resources
 E:\progs\2016\master-sTools\master\obj\Release\master.PtoCalc.resources
 E:\progs\2016\master-sTools\master\obj\Release\master.csproj.GenerateResource.Cache
+E:\progs\2016\master-sTools\master\obj\Release\master.FormBetonCalc.resources

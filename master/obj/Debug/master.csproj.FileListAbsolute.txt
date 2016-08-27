@@ -20,3 +20,7 @@ E:\progs\2016\master-sTools\master\obj\Debug\master.fLinterp.resources
 E:\progs\2016\master-sTools\master\obj\Debug\master.Properties.Resources.resources
 E:\progs\2016\master-sTools\master\obj\Debug\master.PtoCalc.resources
 E:\progs\2016\master-sTools\master\obj\Debug\master.csproj.GenerateResource.Cache
+E:\progs\2016\master-sTools\master\obj\Debug\master.FormBetonCalc.resources
+E:\progs\2016\master-sTools\master\obj\Debug\master.FormBetonSettings.resources
+E:\progs\2016\master-sTools\master\bin\Debug\concrete.mdb
+E:\progs\2016\master-sTools\master\bin\Debug\master.exe.config

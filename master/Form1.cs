@@ -10,7 +10,7 @@ namespace master
 {
     public partial class MainForm : Form
     {
-        
+     
         public MainForm()
         {
             InitializeComponent();
@@ -28,6 +28,12 @@ namespace master
         {
             PtoCalc ptoCalc = new PtoCalc();
             ptoCalc.Show();
+        }
+
+        private void btnBetonCalc_Click(object sender, EventArgs e)
+        {
+            FormBetonCalc FbetonCalc = new FormBetonCalc();
+            FbetonCalc.Show();
         }
     }
 }

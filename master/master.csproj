@@ -40,11 +40,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="concreteDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>concreteDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBetonCalc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBetonCalc.Designer.cs">
+      <DependentUpon>FormBetonCalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBetonSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBetonSettings.Designer.cs">
+      <DependentUpon>FormBetonSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="HelpLinterp.cs">
       <SubType>Form</SubType>
@@ -69,6 +86,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBetonCalc.resx">
+      <DependentUpon>FormBetonCalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBetonSettings.resx">
+      <DependentUpon>FormBetonSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HelpLinterp.resx">
       <DependentUpon>HelpLinterp.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +111,18 @@
     <EmbeddedResource Include="PtoCalc.resx">
       <DependentUpon>PtoCalc.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="concreteDataSet.xsc">
+      <DependentUpon>concreteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="concreteDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>concreteDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="concreteDataSet.xss">
+      <DependentUpon>concreteDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,6 +147,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\helpLint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="concrete.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

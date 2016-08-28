@@ -123,17 +123,11 @@
   <metadata name="concreteDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="betonCollectionTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>375, 17</value>
-  </metadata>
-  <metadata name="concreteDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>586, 17</value>
-  </metadata>
   <metadata name="concreteDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="betonCollectionBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
+  <metadata name="betonCollectionTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>375, 17</value>
   </metadata>
   <metadata name="concreteDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>586, 17</value>

@@ -30,11 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.concreteDataSet = new master.concreteDataSet();
             this.betonCollectionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.concreteDataSet = new master.concreteDataSet();
             this.betonCollectionTableAdapter = new master.concreteDataSetTableAdapters.BetonCollectionTableAdapter();
             this.concreteDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.betonCollectionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnSaveData = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.markDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,14 +45,14 @@
             this.breakstoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chalkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.concreteDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.betonCollectionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.concreteDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.concreteDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.betonCollectionBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -66,18 +67,18 @@
             this.dataGridView1.DataSource = this.betonCollectionBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(848, 175);
+            this.dataGridView1.Size = new System.Drawing.Size(846, 175);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // concreteDataSet
-            // 
-            this.concreteDataSet.DataSetName = "concreteDataSet";
-            this.concreteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // betonCollectionBindingSource
             // 
             this.betonCollectionBindingSource.DataMember = "BetonCollection";
             this.betonCollectionBindingSource.DataSource = this.concreteDataSet;
+            // 
+            // concreteDataSet
+            // 
+            this.concreteDataSet.DataSetName = "concreteDataSet";
+            this.concreteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // betonCollectionTableAdapter
             // 
@@ -88,16 +89,32 @@
             this.concreteDataSetBindingSource.DataSource = this.concreteDataSet;
             this.concreteDataSetBindingSource.Position = 0;
             // 
-            // betonCollectionBindingSource1
+            // btnSaveData
             // 
-            this.betonCollectionBindingSource1.DataMember = "BetonCollection";
-            this.betonCollectionBindingSource1.DataSource = this.concreteDataSetBindingSource;
+            this.btnSaveData.Location = new System.Drawing.Point(764, 205);
+            this.btnSaveData.Name = "btnSaveData";
+            this.btnSaveData.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveData.TabIndex = 9;
+            this.btnSaveData.Text = "Сохранить";
+            this.btnSaveData.UseVisualStyleBackColor = true;
+            this.btnSaveData.Click += new System.EventHandler(this.btnAddData_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(764, 249);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 10;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
             this.idDataGridViewTextBoxColumn.HeaderText = "id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Visible = false;
             // 
             // markDataGridViewTextBoxColumn
             // 
@@ -145,16 +162,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 343);
+            this.ClientSize = new System.Drawing.Size(899, 343);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnSaveData);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormBetonSettings";
             this.Text = "FormBetonSettings";
             this.Load += new System.EventHandler(this.FormBetonSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.concreteDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.betonCollectionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.concreteDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.concreteDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.betonCollectionBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -165,8 +183,9 @@
         private concreteDataSet concreteDataSet;
         private System.Windows.Forms.BindingSource betonCollectionBindingSource;
         private concreteDataSetTableAdapters.BetonCollectionTableAdapter betonCollectionTableAdapter;
-        private System.Windows.Forms.BindingSource betonCollectionBindingSource1;
         private System.Windows.Forms.BindingSource concreteDataSetBindingSource;
+        private System.Windows.Forms.Button btnSaveData;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn markDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn noteDataGridViewTextBoxColumn;

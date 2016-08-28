@@ -18,8 +18,18 @@ namespace master
         private void FormBetonSettings_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "concreteDataSet.BetonCollection". При необходимости она может быть перемещена или удалена.
-          //  this.betonCollectionTableAdapter.Fill(this.concreteDataSet.BetonCollection);
+            this.betonCollectionTableAdapter.Fill(this.concreteDataSet.BetonCollection);
 
+        }
+
+        private void btnAddData_Click(object sender, EventArgs e)
+        {
+            this.betonCollectionTableAdapter.Update(this.concreteDataSet.BetonCollection);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.RemoveAt(dataGridView1.SelectedCells[0].RowIndex);
         }
     }
 }

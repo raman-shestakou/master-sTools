@@ -19,6 +19,7 @@ namespace master
         private void btnBetonSetings_Click(object sender, EventArgs e)
         {
             FBetSettings.ShowDialog();
+          
         }
     }
 }

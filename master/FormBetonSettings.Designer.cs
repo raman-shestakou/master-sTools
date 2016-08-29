@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnSaveData = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.betonCollectionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.concreteDataSet = new master.concreteDataSet();
             this.betonCollectionTableAdapter = new master.concreteDataSetTableAdapters.BetonCollectionTableAdapter();
             this.concreteDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnSaveData = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.markDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,8 +67,28 @@
             this.dataGridView1.DataSource = this.betonCollectionBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(846, 175);
+            this.dataGridView1.Size = new System.Drawing.Size(744, 319);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // btnSaveData
+            // 
+            this.btnSaveData.Location = new System.Drawing.Point(781, 66);
+            this.btnSaveData.Name = "btnSaveData";
+            this.btnSaveData.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveData.TabIndex = 9;
+            this.btnSaveData.Text = "Сохранить";
+            this.btnSaveData.UseVisualStyleBackColor = true;
+            this.btnSaveData.Click += new System.EventHandler(this.btnAddData_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(781, 123);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 10;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // betonCollectionBindingSource
             // 
@@ -89,32 +109,12 @@
             this.concreteDataSetBindingSource.DataSource = this.concreteDataSet;
             this.concreteDataSetBindingSource.Position = 0;
             // 
-            // btnSaveData
-            // 
-            this.btnSaveData.Location = new System.Drawing.Point(764, 205);
-            this.btnSaveData.Name = "btnSaveData";
-            this.btnSaveData.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveData.TabIndex = 9;
-            this.btnSaveData.Text = "Сохранить";
-            this.btnSaveData.UseVisualStyleBackColor = true;
-            this.btnSaveData.Click += new System.EventHandler(this.btnAddData_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(764, 249);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 10;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
             this.idDataGridViewTextBoxColumn.HeaderText = "id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Visible = false;
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // markDataGridViewTextBoxColumn
             // 
@@ -168,6 +168,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormBetonSettings";
             this.Text = "FormBetonSettings";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBetonSettings_FormClosing);
             this.Load += new System.EventHandler(this.FormBetonSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.betonCollectionBindingSource)).EndInit();
